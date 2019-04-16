@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="376.0" prefWidth="546.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="laberintografos.FXMLDocumentController">
+    <children>
+      <AnchorPane fx:id="inicio" prefHeight="376.0" prefWidth="546.0">
+         <children>
+              <Button fx:id="button" layoutX="215.0" layoutY="213.0" onAction="#handleButtonAction" text="Construir grafo" />
+            <Label layoutX="94.0" layoutY="140.0" text="Ingresa el tamaño del laberinto" />
+            <Label layoutX="87.0" layoutY="171.0" text="Ingresa el porcentaje de paredes" />
+            <TextField fx:id="text_tamanio" layoutX="273.0" layoutY="136.0" />
+            <TextField fx:id="text_porcentaje" layoutX="273.0" layoutY="167.0" />
+         </children>
+      </AnchorPane>
+      <StackPane fx:id="tablero_mostrar" prefHeight="376.0" prefWidth="546.0" visible="false" />
+    </children>
+</AnchorPane>
